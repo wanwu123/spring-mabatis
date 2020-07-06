@@ -19,10 +19,10 @@ public class ImportBd implements ImportBeanDefinitionRegistrar {
     @Override
     public void registerBeanDefinitions(AnnotationMetadata importingClassMetadata, BeanDefinitionRegistry registry, BeanNameGenerator importBeanNameGenerator) {
         //获取路径
-        MultiValueMap<String, Object> allAnnotationAttributes = importingClassMetadata.getAllAnnotationAttributes(LizhengScan.class.getName());
-        List<Object> value = allAnnotationAttributes.get("value");
-        Object o = value.get(0);
-        System.out.println(o);
+//        MultiValueMap<String, Object> allAnnotationAttributes = importingClassMetadata.getAllAnnotationAttributes(LizhengScan.class.getName());
+//        List<Object> value = allAnnotationAttributes.get("value");
+//        Object o = value.get(0);
+//        System.out.println(o);
         //扫描
         List<Class> mappers = new ArrayList();
         mappers.add(UserMapper.class);
